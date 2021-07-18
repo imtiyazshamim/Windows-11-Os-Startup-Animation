@@ -3,7 +3,8 @@ I have created Windows 11 Startup Animation Design using GSAP and HTML CSS JS fr
 
 [![youtube](youtube.png)](https://www.youtube.com/watch?v=JXl4QgYUi9c)
 
-![](home.png)
+
 ![](app.png)
 ![](name.png)
+![](home.png)
 ![](startup.png)
