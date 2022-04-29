@@ -1,0 +1,246 @@
+*{
+    margin:0;
+    padding:0;
+    overflow: hidden;
+}
+.power-on{
+    z-index: 700;
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    background-color: black;
+    /* display: none; */
+}
+.power-on .window{
+    width: 206px;
+    height: 206px;
+    display: flex;
+    flex-direction: row;
+
+}
+.sq{
+    width: 100px;
+    height: 100px;
+    margin: 3px;
+    background-color: #0f86d2;
+
+}
+.loading .load{
+    position: absolute;
+    width: 30px;
+    margin-left: -15px;
+    height: 30px;
+    animation: animate 2.5s infinite;
+
+}
+.load:nth-child(2){
+    animation-delay: 0.2s;
+}
+.load:nth-child(3){
+    animation-delay: 0.4s;
+}
+.load:nth-child(4){
+    animation-delay: 0.6s;
+}
+.load:nth-child(5){
+    animation-delay: 0.8s;
+}
+.load:nth-child(6){
+    animation-delay: 1.2s;
+}
+.load:nth-child(7){
+    animation-delay: 0.9s;
+}
+@keyframes animate {
+    from{
+        transform: rotate(0deg);
+        opacity: 1;
+
+    }
+    to{
+        transform: rotate(360deg);
+    
+    }
+}
+
+.loading .load .dot{
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: white;
+}
+
+
+/* loadscreen */
+.load-screen{
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 600;
+    /* display: none; */
+}
+.screen{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background: url(lock.jpg) no-repeat;
+    background-size: cover;
+
+}
+.user-image{
+    width: 200px;
+    height: 200px;
+    z-index: 600;
+    border-radius: 50%;
+    background-image: url(user.png);
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+
+
+}
+.user-name{
+    z-index: 600;
+    color: #fdfdfd;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 40px;
+    font-weight: 350;
+    margin-top: 20px;
+
+}
+.loading-text{
+    z-index: 600;
+    font-size: 25px;
+    color: #fdfdfd;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 300;
+    margin-top: 20px;
+    margin-left: 50px;
+
+}
+.loading-head{
+    margin-right: 225px;
+
+}
+.loadlock{
+    margin-top: 20px;
+}
+
+/* home */
+.home-screen{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-image: url(home.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    z-index: 400;
+
+}
+.icons{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 135px;
+    flex-direction: column;
+}
+.icons img{
+    z-index: 500;
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+}
+.taskbar{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    height: 45px;
+    width: 100%;
+    background: rgba(0,0,0,0.5);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    z-index: 500;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.task-icons{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    flex-direction: row;
+
+}
+.task-icons img{
+    z-index: 500;
+    width: 25px;
+    height: 25px;
+    margin: 0px 10px;
+
+}
+#start{
+    width: 40px;
+    height: 40px;
+    z-index: 600;
+}
+.right-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+
+}
+.right-box ion-icon, .time{
+    z-index: 500;
+}
+ion-icon{
+    width: 20px;
+    height: 20px;
+    color: #fdfdfd;
+    margin: 0px 5px;
+
+}
+.time{
+    color: #fdfdfd;
+    margin: 0px 5px;
+    font-size: 15px;
+
+}
+
+.start{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 400;
+    height: 100vh;
+    width: 100%;
+    margin-top: 8vh;
+
+}
+.start img{
+    border-radius: 10px;
+    opacity: 0;
+    transform: translateY(1000px);
+}
